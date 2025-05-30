@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Online Text Editor</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            
+
+
+       
+    </head>
+    <body>
+        <div class="toolbar">
+            <button onClick="format('bold')"><b>B</b></button>
+            <button onClick="format('underline')"><u>U</u></button>
+            <button onClick="format('italic')"><i>I</i></button>
+            <input type="color" onchange="changeColor(this.value)">
+          
+            <button onClick="alignText('center')"><i class ="fas fa-align-center"></i></button>
+            <button onClick="alignText('justify')"><i class="fas fa-align-justify"></i></button>
+            <button onClick="alignText('right')"><i class="fas fa-align-right"></i></button>
+            <button onClick="alignText('left')"><i class="fas fa-align-left"></i></button>
+
+               
+
+            <button onClick="undo()"><i class ="fas fa-rotate-left"></i></button>
+            <button onClick="redo()"><i class="fas fa-rotate-right"></i></button>
+
+        </div>
+        <div id ="editor" contenteditable="true" class="editor">
+            <p><br></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

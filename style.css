@@ -1,0 +1,32 @@
+body {
+    font-family:Arial;
+    padding: 20px;
+    background-color: azure; 
+}
+
+.toolbar {
+    margin-bottom : 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius:5px;
+}
+
+.toolbar button ,.toolbar input[type="color"] {
+    margin-right:5px;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+.toolbar i {
+    pointer-events:none;
+
+}
+.editor{
+    border: 1px solid black;
+    border-radius:5px;
+    padding:15px;
+    min-height: 300px;
+    background:white;
+
+
+}
